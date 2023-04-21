@@ -1,0 +1,54 @@
+body {
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 300px 250px;
+}
+.avatar {
+  width: 300px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 3px 0px;
+}
+
+.nav {
+  background: orangered;
+  padding: 10px;
+  margin: -10px -50px 20px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px 1px 3px 0px;
+}
+
+.nav-butt {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.Card {
+  background: darkorange;
+  padding: 10px 50px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 0px;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  box-shadow: 0px 0px 3px 0px;
+}
+
+button:hover {
+  background: rgb(248, 236, 169);
+}
+button:active {
+  background: rgb(155, 255, 155);
+}
+
+.nug-counter {
+  padding-top: 10px;
+  text-align: center;
+}

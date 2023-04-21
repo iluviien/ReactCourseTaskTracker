@@ -10,7 +10,6 @@ function UsersList(props) {
             {user.name} ({user.age} years old)
           </li>
         ))}
-        <li></li>
       </ul>
     </Card>
   );
