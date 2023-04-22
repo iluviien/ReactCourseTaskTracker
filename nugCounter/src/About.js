@@ -18,10 +18,6 @@ export default function About() {
     setCount(0);
   };
 
-  // const resetCount = () => {
-  //   setCount(0);
-  //   setCalories(initialCalories);
-  // };
   return (
     <>
       <div>

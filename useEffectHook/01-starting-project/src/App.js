@@ -11,9 +11,18 @@ function App() {
     // We should of course check email and password
     // But it's just a dummy/ demo anyways
     localStorage.setItem("isLoggedIn", "1");
+    setIsLoggedIn(true);
   };
+  useEffect(() => {
+    // this instance saves a local file that remembers the user if they are logged in upon refreshing the page
+    const storedUserLoggedInInformation = localStorage.getItem("isLoggedIn");
+    if (storedUserLoggedInInformation === "1") {
+      setIsLoggedIn(true);
+    }
+  }, []);
 
   const logoutHandler = () => {
+    localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
   };
 
