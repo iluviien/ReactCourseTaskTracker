@@ -39,7 +39,7 @@ function App() {
   }, []);
   useEffect(() => {
     fetchMoviesHandler();
-  }, [fetchMoviesHandler]);
+  }, []);
   async function addMovieHandler(movie) {
     const response = await fetch(
       "https://react-http-f0a96-default-rtdb.europe-west1.firebasedatabase.app/movies.json",
@@ -53,6 +53,7 @@ function App() {
     );
     const data = await response.json();
     console.log(data);
+    fetchMoviesHandler();
   }
   let content = <p> Found no movies.</p>;
   if (movies.length > 0) {
